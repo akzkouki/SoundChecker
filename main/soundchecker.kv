@@ -1,0 +1,36 @@
+<SoundChecker>:
+    BoxLayout:
+        orientation: 'vertical' 
+        Label:
+            size_hint: 1.0,0.1
+            text_size: self.size
+            text: root.text
+            halign: 'left'
+            valign: 'top'
+            font_size:  40
+            text: "SoundChecker"
+            font_name: "mplus-1m-light.ttf"
+            canvas.before: 
+                Color:
+                    rgba: 30/255, 152/255, 185/255, 1
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+        Label:
+            size_hint: 1.0,0.6
+            font_size:  40
+            text: "ff"
+            font_name: "mplus-1m-light.ttf"
+            canvas.before: 
+                Color:
+                    rgba: 1, 1, 1, 1
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+        TextInput:
+            readonly: True
+            font_name: "mplus-1m-light.ttf"
+            text: root.log
+            size_hint: 1.0, 0.2
